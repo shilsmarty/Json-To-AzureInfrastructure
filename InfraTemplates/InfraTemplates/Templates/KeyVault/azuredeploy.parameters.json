@@ -1,0 +1,35 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "keyVaultName": {
+      "value": "hackdemokeyvault"
+    },
+    "tenantId": {
+      "value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+    },
+    "accessPolicies": {
+      "value": [
+        {
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "objectId": "955137cd-1583-4238-ab3b-120c614c41e0",
+          "permissions": {
+            "keys": [ "all" ],
+            "secrets": [ "all" ]
+          }
+        }
+      ]
+      //},
+      //"secureObject": {
+      //  "value": {
+      //    "secrets": [
+      //      {
+      //        "secretName": "testsecret",
+      //        "secretValue": "secretvalue"
+      //      }
+      //    ]
+      //  }
+      //}
+    }
+  }
+}
